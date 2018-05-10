@@ -12,6 +12,9 @@ app.use(bodyParser.json());
 // ---------------Project specific server stuff---------------- //
 
 const database = require('./modules/database');
+const movieRouter = require('./routes/movies.router');
+
+app.use('/movies', movieRouter);
 
 app.listen(PORT, () => {
     console.log(`listening on port: ${PORT}`)

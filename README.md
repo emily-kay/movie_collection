@@ -14,6 +14,9 @@ DOM
     - [ ] Cards
 
 VIEWS 
+- [ ] Home
+    - [ ] HTML
+    - [ ] Controller
 - [ ] Submit a new movie
     - [ ] HTML
         - [ ] Inputs: movie name, director, genre, release date, run time, image
@@ -40,9 +43,9 @@ ROUTES
 
 DATABASE
 - [X] Module DB connection
-- [ ] Create DB movie-collection
-- [ ] Add tables 'movies' and 'genres'
-- [ ] Add mock data
+- [X] Create DB movie-collection
+- [X] Add tables 'movies' and 'genres'
+- [X] Add mock data
 
 
     Personal Stretch goals 
