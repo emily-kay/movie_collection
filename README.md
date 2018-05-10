@@ -6,8 +6,9 @@
 DOM
 - [X] Create file system
 - [X] Npm init/install
-- [ ] Index.html
-    - [ ] Reference in app
+- [X] Index.html
+    - [X] Reference in app
+- [X] Client.js
 - [ ] Style.css
     - [ ] Sidebar submission form
     - [ ] Cards
@@ -29,7 +30,7 @@ VIEWS
         - [ ] GET movie count
 
 SERVER
-- [ ] Set-up 
+- [X] Set-up 
 - [ ] Reference routes
 
 ROUTES
@@ -38,7 +39,7 @@ ROUTES
 - [ ] DELETE
 
 DATABASE
-- [ ] Module DB connection
+- [X] Module DB connection
 - [ ] Create DB movie-collection
 - [ ] Add tables 'movies' and 'genres'
 - [ ] Add mock data

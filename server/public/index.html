@@ -6,26 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-                <!-- Scripts by Others -->
+    <!-- Scripts by Others -->
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular-route.js"></script>
 
-                <!-- Scripts by Me -->
+    <!-- Scripts by Me -->
     <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/home.controller.js"></script>
     <script src="scripts/controllers/movie.controller.js"></script>
     <script src="scripts/controllers/genre.controller.js"></script>
     <script src="scripts/controllers/services/movie.service.js"></script>
 
-                <!-- Styling -->
+    <!-- Styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Movie Collection</title>
 </head>
-                <!-- Angular APP -->
-<body>
-    <h1>Movie Collection</h1>
+
+<!-- Angular APP -->
+
+<body ng-app="MovieApp">
+    <h1 id="logo">Home Video</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#!/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#!/movies">Submit a New Movie</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#!/genre">Genres</a>
+        </li>
+    </ul>
+    <ng-view></ng-view>
 </body>
 
 </html>
