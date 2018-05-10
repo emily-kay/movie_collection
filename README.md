@@ -4,8 +4,8 @@
 (Accomplish by end of Friday)
 
 DOM
-- [ ] Create file system
-- [ ] Npm init/install
+- [X] Create file system
+- [X] Npm init/install
 - [ ] Index.html
     - [ ] Reference in app
 - [ ] Style.css
