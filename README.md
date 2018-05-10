@@ -22,15 +22,15 @@ VIEWS
         - [ ] Inputs: movie name, director, genre, release date, run time, image
         - [ ] Submit buton
     - [ ] Controller
-    - [ ] Service
-        - [ ] GET all movies
-        - [ ] POST new movie
-        - [ ] DELETE entry
 - [ ] Genre count
     - [ ] HTML
     - [ ] Controller
-    - [ ] Service
-        - [ ] GET movie count
+       
+SERVICES
+- [ ] GET all movies
+- [ ] GET movie count
+- [ ] POST new movie
+- [ ] DELETE entry
 
 SERVER
 - [X] Set-up 
