@@ -11,35 +11,35 @@ DOM
 - [X] Client.js
 - [ ] Style.css
     - [ ] Sidebar submission form
-    - [ ] Cards
+    - [X] Cards
 
 VIEWS 
 - [ ] Home
     - [ ] HTML
-    - [ ] Controller
+    - [X] Controller
 - [ ] Submit a new movie
     - [ ] HTML
         - [X] Inputs: movie name, director, genre, release date, run time, image
         - [X] Submit buton
-    - [ ] Controller
+    - [X] Controller
 - [ ] Genre count
     - [ ] HTML
     - [ ] Controller
        
 SERVICES
-- [ ] GET all movies
+- [X] GET all movies
 - [ ] GET movie count
-- [ ] POST new movie
+- [X] POST new movie
 - [ ] DELETE entry
 
 SERVER
 - [X] Set-up 
-- [ ] Reference routes
+- [X] Reference routes
 
 ROUTES
 - [X] GET [movie name, director, release date, run time]
+- [ ] GET  [genre]
 - [X] POST [movie name, director, release date, run time]
-- [ ] POST  [genre]
 - [ ] DELETE
 
 DATABASE
@@ -52,6 +52,8 @@ DATABASE
     Personal Stretch goals 
 (Accomplish by end of Sunday)
 
+- [ ] Movie poster API
+- [ ] Angular Materials
 - [ ] Give a visual rating
 - [ ] Search by name, rating, genre, director
 
