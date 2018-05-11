@@ -8,7 +8,14 @@ const pool = require('../modules/database')
 //---------------GET and POST from Movie Controller----------------//
 
 router.get('/', (req,res)=>{
-    pool.query(`SELECT * FROM "movies";`)
+    pool.query (`SELECT "m"."name",
+                        "m"."id",
+                        "m"."director",
+                        "m"."release_date",
+                        "m"."run_time",
+                        "g"."name"
+                FROM "movies" as "m" JOIN "genres" as "g"
+                ON "m"."genre_id" = "g"."id";`)
         .then((results)=>{
             res.send(results.rows);
         })

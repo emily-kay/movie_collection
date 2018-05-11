@@ -6,9 +6,9 @@
             <input type="text" ng-model="vm.newMovie.director" placeholder="Director">
             <input type="date" ng-model="vm.newMovie.release_date" placeholder="Release Date">
             <input type="number" ng-model="vm.newMovie.run_time" placeholder="Run Time">
-            <select ng-model="vm.newHome.genre_id">
+            <select ng-model="vm.newMovie.genre_id">
                 <option value="">----Please Select----</option>
-                <option ng-repeat="genre in vm.genres.list" value="{{genre.id}}">{{genre.name}}</option>
+                <option ng-repeat="genre in vm.allGenres.details" ng-value="genre.id">{{genre.name}}</option>
             </select>
             <input type="submit" value="Submit New Movie" />
         </form>
@@ -24,6 +24,7 @@
                             <p class="card-text">Directed by {{details.director}}</p>
                             <p class="card-text">Released on {{details.release_date | date: mm-dd-yyyy}}</p>
                             <p class="card-text">Run time {{details.run_time}} min</p>
+                            <p class="card-text">{{details.genre}}</p>
                     </div>
                 </div>
             </div>
