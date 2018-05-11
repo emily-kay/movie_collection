@@ -1,3 +1,18 @@
 <div>
     <h2>{{vm.message}}</h2>
+    <div class="card-deck">
+        <div ng-repeat="details in vm.allGenres.details">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                        <h5 class="card-title">{{details.name}}</h5>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <br>
+    <form ng-submit="vm.postGenre(vm.newGenre)">
+            <br>
+            <input type="text" ng-model="vm.newGenre.name" placeholder="Genre">
+            <input type="submit" value="Submit New Genre" />
+        </form>   
 </div>
