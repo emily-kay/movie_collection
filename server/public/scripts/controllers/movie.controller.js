@@ -1,9 +1,9 @@
 //---------------MOVIE CONTROLLER----------------//
 
-app.controller('MovieController', ['AddMovieService', 'GetMovieService', '$http', function(AddMovieService, GetMovieService, $http){
+app.controller('MovieController', ['AddMovieService', 'LastMovieService', '$http', function(AddMovieService, LastMovieService, $http){
     console.log('MovieController works');
     var self = this;
 
     self.postMovie = AddMovieService.postMovie;
-    self.allMovies = GetMovieService.allMovies;
+    self.lastMovies = LastMovieService.lastMovies;
 }]);//end MovieController

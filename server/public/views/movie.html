@@ -12,8 +12,11 @@
             </select>
             <input type="submit" value="Submit New Movie" />
         </form>
+        <br>
+        <p>Latest Movie Added</p>
+        <br>
         <div class="card-deck">
-                <div ng-repeat="details in vm.allMovies.details">
+                <div ng-repeat="details in vm.lastMovies.details">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" ng-src="{{details.image_path}}" alt="Card image cap">
                     <div class="card-body">

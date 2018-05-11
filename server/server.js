@@ -13,8 +13,10 @@ app.use(bodyParser.json());
 
 const database = require('./modules/database');
 const movieRouter = require('./routes/movies.router');
+const recentMovieRouter = require('./routes/recentMovie.router');
 
 app.use('/movies', movieRouter);
+app.use('/last', recentMovieRouter);
 
 app.listen(PORT, () => {
     console.log(`listening on port: ${PORT}`)
