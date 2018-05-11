@@ -7,18 +7,6 @@ const pool = require('../modules/database')
 
 //---------------GET and POST from Movie Controller----------------//
 
-// router.get('/', (req,res)=>{
-//     pool.query(`SELECT * FROM "movies" FULL OUTER JOIN "genres"
-//                 ON "movies"."genre_id" = "genres"."id";`)
-//         .then((results)=>{
-//             res.send(results.rows);
-//         })
-//         .catch((error)=>{
-//             console.log('error with SQL SELECT on get ', error);
-//             res.sendStatus(500);
-//         });
-// }); //end GET
-
 router.get('/', (req,res)=>{
     pool.query(`SELECT "m"."name",
                         "m"."id",
