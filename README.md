@@ -19,8 +19,8 @@ VIEWS
     - [ ] Controller
 - [ ] Submit a new movie
     - [ ] HTML
-        - [ ] Inputs: movie name, director, genre, release date, run time, image
-        - [ ] Submit buton
+        - [X] Inputs: movie name, director, genre, release date, run time, image
+        - [X] Submit buton
     - [ ] Controller
 - [ ] Genre count
     - [ ] HTML
@@ -37,8 +37,9 @@ SERVER
 - [ ] Reference routes
 
 ROUTES
-- [ ] GET 
-- [ ] POST 
+- [X] GET [movie name, director, release date, run time]
+- [X] POST [movie name, director, release date, run time]
+- [ ] POST  [genre]
 - [ ] DELETE
 
 DATABASE
