@@ -6,12 +6,14 @@ app.service('PosterService', ['$http', function($http){
     var poster = {details: {}};
 
     self.getPoster= function(){
+        var baseUrl = 'https://image.tmdb.org/t/p/w500';
+       
         $http({
         method: 'GET',
-        url: 'https://image.tmdb.org/t/p/w500/',
+        url: 'https://api.themoviedb.org/3/search/movie',
         params: {
             api_key: 'dbde078620dc32525aca7b469df28fd3',
-            query
+            query: newMovie.name,
         }
     })
     .then(function(response){
