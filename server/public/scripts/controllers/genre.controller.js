@@ -6,6 +6,6 @@ app.controller('GenreController', ['GetGenreService', 'AddGenreService', 'CountG
     self.message = "Possible Genres";
 
     self.postGenre = AddGenreService.postGenre;
-    self.countGenres = CountGenreService.countGenres;
+    self.countAllGenres = CountGenreService.countAllGenres;
     self.allGenres = GetGenreService.allGenres;
 }]);//end GenreController

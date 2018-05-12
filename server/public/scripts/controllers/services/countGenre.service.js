@@ -1,7 +1,7 @@
 app.service('CountGenreService', ['$http', function($http){
     console.log('CountGenreService works');
     var self = this;
-    self.allGenres = {
+    self.countAllGenres = {
         details: []
     };
 
@@ -11,7 +11,9 @@ app.service('CountGenreService', ['$http', function($http){
         url: '/count',
     })
     .then(function(response){
-        self.allGenres.details = response.data;
+        console.log(response);
+        
+        self.countAllGenres.details = response.data;
     })
     .catch(function(error){
         console.log('No homes for you ', error)

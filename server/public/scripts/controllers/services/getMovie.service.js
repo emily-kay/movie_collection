@@ -1,6 +1,7 @@
-app.service('GetMovieService', ['$http', function($http){
+app.service('GetMovieService', ['PosterService', '$http', function(PosterService, $http){
     console.log('GetMovieService works');
     var self = this;
+    self.getPoster = PosterService.getPoster
     self.allMovies = {
         details: []
     };
@@ -12,6 +13,7 @@ app.service('GetMovieService', ['$http', function($http){
     })
     .then(function(response){
         self.allMovies.details = response.data;
+        self.getPoster();
     })
     .catch(function(error){
         console.log('No homes for you ', error)
