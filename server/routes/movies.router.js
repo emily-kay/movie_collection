@@ -28,8 +28,8 @@ router.get('/', (req,res)=>{
 
 router.post('/', (req, res)=>{
     const movie = req.body;
-    pool.query(`INSERT INTO "movies" ("name", "director",  "release_date", "run_time", "genre_id")
-    VALUES ($1, $2, $3, $4, $5);`, [movie.name, movie.director, movie.release_date, movie.run_time, movie.genre_id])
+    pool.query(`INSERT INTO "movies" ("name", "director",  "release_date", "run_time", "genre_id", "image_path")
+    VALUES ($1, $2, $3, $4, $5, $6);`, [movie.name, movie.director, movie.release_date, movie.run_time, movie.genre_id, movie.image_path])
         .then((results)=>{
             console.log(results);
             

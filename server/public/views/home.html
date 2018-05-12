@@ -8,7 +8,7 @@
                 <button type="button" class="close" aria-label="Close">
                     <span ng-click="vm.deleteMovie(details)">&times;</span>
                 </button>
-                <img class="card-img-top" ng-src="{{vm.poster.details}}" alt="Card image cap">
+                <img class="card-img-top" ng-src="{{details.image_path}}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">{{details.name}}</h5>
                     <p class="card-text">Directed by {{details.director}}</p>
