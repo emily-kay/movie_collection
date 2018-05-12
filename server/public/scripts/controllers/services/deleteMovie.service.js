@@ -1,3 +1,5 @@
+//---------------Deletes a movie from DB----------------//
+
 app.service('DeleteMovieService',  ['GetMovieService', '$http', function(GetMovieService, $http){
     console.log('DeleteMovieService works');
     var self = this;
@@ -13,7 +15,7 @@ app.service('DeleteMovieService',  ['GetMovieService', '$http', function(GetMovi
         }).then((response) => {
             self.getAllMovies();
         }).catch((error) => {
-            console.log('error on deleteMovie ', error);
+            console.log('Problem on DeleteMovieService DELETE ', error);
         });
     }
 }]);//end DeleteMovieService

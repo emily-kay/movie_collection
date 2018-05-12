@@ -1,3 +1,5 @@
+//---------------Adds a new movie to DB----------------//
+
 app.service('AddMovieService',  ['$http', 'LastMovieService', function($http, LastMovieService){
     console.log('AddMovieService works');
     var self = this;
@@ -15,7 +17,7 @@ app.service('AddMovieService',  ['$http', 'LastMovieService', function($http, La
         self.getLastMovies();
     })
     .catch(function(error){
-        console.log('No movie for you ', error)
+        console.log('Problem on AddMovieService POST ', error)
     })}; //end POST
 
     self.getLastMovies();

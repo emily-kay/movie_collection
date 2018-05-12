@@ -9,38 +9,55 @@ DOM
 - [X] Index.html
     - [X] Reference in app
 - [X] Client.js
-- [ ] Style.css
-    - [ ] Sidebar submission form
-    - [X] Cards
 
+STYLING
+- [ ] Style.css
+- [ ] Angular Materials
+    - [ ] Sidebar submission form
+- [ ] Bootstrap
+    - [X] Cards
+   
 VIEWS 
-- [ ] Home
-    - [ ] HTML
+- [X] Home
+    - [X] HTML
     - [X] Controller
-- [ ] Submit a new movie
-    - [ ] HTML
+- [X] Submit a new movie
+    - [X] HTML
         - [X] Inputs: movie name, director, genre, release date, run time, image
         - [X] Submit buton
     - [X] Controller
-- [ ] Genre count
-    - [ ] HTML
-    - [ ] Controller
+- [X] Genre count
+    - [X] HTML
+    - [X] Controller
        
 SERVICES
-- [X] GET all movies
-- [ ] GET movie count
-- [X] POST new movie
-- [ ] DELETE entry
+- [X] GET
+    - [X] all movies
+    - [X] all genres
+    - [X] api
+    - [X] last movie
+    - [X] movie count
+- [X] POST 
+    - [X] new movie
+    - [X] new genre
+- [X] DELETE movie
 
 SERVER
 - [X] Set-up 
 - [X] Reference routes
 
 ROUTES
-- [X] GET [movie name, director, release date, run time]
-- [ ] GET  [genre]
-- [X] POST [movie name, director, release date, run time]
-- [ ] DELETE
+- [X] Movies
+    - [X] GET all movies
+    - [X] POST new movie
+    - [X] DELETE movie
+- [X] Genre 
+    - [X] GET all genres
+    - [X] POST new genre
+- [X] Recent Movie
+    - [X] last movie
+- [X] Genre Count
+    - [X] movie count
 
 DATABASE
 - [X] Module DB connection
@@ -53,10 +70,9 @@ DATABASE
 (Accomplish by end of Sunday)
 
 - [ ] Movie poster API
-- [ ] Angular Materials
 - [ ] Give a visual rating
-- [ ] Search by name, rating, genre, director
 
         Future Additions
 
 - [ ] Clicking on a movie for more information
+- [ ] Search by name, rating, genre, director

@@ -1,10 +1,13 @@
+<!-- Add new genre and display all genres in Database -->
+
 <div>
     <h2>{{vm.message}}</h2>
     <div class="card-deck">
-        <div ng-repeat="details in vm.allGenres.details">
+        <div ng-repeat="details in vm.countAllGenres.details">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                         <h5 class="card-title">{{details.name}}</h5>
+                        <p class="card-text">{{details.count}}</p>
                 </div>
             </div>
         </div>

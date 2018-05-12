@@ -1,10 +1,11 @@
 //---------------MOVIE CONTROLLER----------------//
 
-app.controller('MovieController', ['AddMovieService', 'GetGenreService', 'LastMovieService', '$http', function(AddMovieService, GetGenreService, LastMovieService, $http){
+app.controller('MovieController', ['AddMovieService', 'GetGenreService', 'LastMovieService', 'PosterService', '$http', function(AddMovieService, GetGenreService, LastMovieService, PosterService, $http){
     console.log('MovieController works');
     var self = this;
 
-    self.postMovie = AddMovieService.postMovie;
-    self.lastMovies = LastMovieService.lastMovies;
     self.allGenres = GetGenreService.allGenres;
+    self.getPoster = PosterService.getPoster
+    self.lastMovies = LastMovieService.lastMovies;
+    self.postMovie = AddMovieService.postMovie;
 }]);//end MovieController

@@ -1,3 +1,5 @@
+//---------------Gets all movies in DB----------------//
+
 app.service('GetMovieService', ['$http', function($http){
     console.log('GetMovieService works');
     var self = this;
@@ -14,7 +16,7 @@ app.service('GetMovieService', ['$http', function($http){
         self.allMovies.details = response.data;
     })
     .catch(function(error){
-        console.log('No homes for you ', error)
+        console.log('Problem on GetMovieService GET ', error)
     })}; //end GET
 
     self.getAllMovies();

@@ -5,7 +5,7 @@ const pg = require('pg');
 const router = express.Router();
 const pool = require('../modules/database')
 
-//---------------GET and POST from Movie Controller----------------//
+//---------------GET, POST, DELETE from Movie Controller----------------//
 
 router.get('/', (req,res)=>{
     pool.query(`SELECT "m"."name",
@@ -28,8 +28,8 @@ router.get('/', (req,res)=>{
 
 router.post('/', (req, res)=>{
     const movie = req.body;
-    pool.query(`INSERT INTO "movies" ("name", "director",  "release_date", "run_time", "genre_id")
-    VALUES ($1, $2, $3, $4, $5);`, [movie.name, movie.director, movie.release_date, movie.run_time, movie.genre_id])
+    pool.query(`INSERT INTO "movies" ("name", "director",  "release_date", "run_time", "genre_id", "image_path")
+    VALUES ($1, $2, $3, $4, $5, $6);`, [movie.name, movie.director, movie.release_date, movie.run_time, movie.genre_id, movie.image_path])
         .then((results)=>{
             console.log(results);
             
@@ -43,7 +43,6 @@ router.post('/', (req, res)=>{
 }); //end POST
 
 router.delete('/', (req, res) => {
-    console.log('DELETE /ships', req.query);
     const movieId = req.query.id;
     pool.query('DELETE FROM "movies" WHERE "id" = $1;', [movieId])
         .then((result) => {

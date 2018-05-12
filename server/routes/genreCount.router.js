@@ -5,12 +5,13 @@ const pg = require('pg');
 const router = express.Router();
 const pool = require('../modules/database')
 
-//---------------GET from LastMovieService----------------//
+//---------------GET from CountGenreService----------------//
 
 router.get('/', (req,res)=>{
-    pool.query(`SELECT * FROM "movies"
-        ORDER BY "movies"."id" DESC
-        LIMIT 1;`)
+    pool.query(`SELECT "genres"."name","movies"."genre_id", 
+                COUNT("genre_id") FROM "movies"
+                FULL OUTER JOIN "genres" ON "genres"."id"="movies"."genre_id"
+                GROUP BY "genres"."name", "movies"."genre_id";`)
         .then((results)=>{
             res.send(results.rows);
         })
@@ -19,5 +20,6 @@ router.get('/', (req,res)=>{
             res.sendStatus(500);
         });
 }); //end GET
+
 
 module.exports = router;
