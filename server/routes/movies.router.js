@@ -42,4 +42,17 @@ router.post('/', (req, res)=>{
         })
 }); //end POST
 
+router.delete('/', (req, res) => {
+    console.log('DELETE /ships', req.query);
+    const movieId = req.query.id;
+    pool.query('DELETE FROM "movies" WHERE "id" = $1;', [movieId])
+        .then((result) => {
+            res.sendStatus(200);
+        })
+        .catch((error) => {
+            console.log('error on server delete', error);
+            res.sendStatus(500);
+        });
+}); //end DELETE
+
 module.exports = router;
