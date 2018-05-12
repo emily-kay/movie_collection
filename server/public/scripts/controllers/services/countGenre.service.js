@@ -1,3 +1,5 @@
+//---------------Counts all the movies in each genre----------------//
+
 app.service('CountGenreService', ['$http', function($http){
     console.log('CountGenreService works');
     var self = this;
@@ -16,7 +18,7 @@ app.service('CountGenreService', ['$http', function($http){
         self.countAllGenres.details = response.data;
     })
     .catch(function(error){
-        console.log('No homes for you ', error)
+        console.log('Problem on CountGenreService GET ', error)
     })}; //end GET
 
 }]);//end CountGenreService

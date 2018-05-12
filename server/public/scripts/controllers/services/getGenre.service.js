@@ -1,3 +1,5 @@
+//---------------Get all genres in DB----------------//
+
 app.service('GetGenreService', ['CountGenreService', '$http', function(CountGenreService, $http){
     console.log('GetGenreService works');
     var self = this;
@@ -16,7 +18,7 @@ app.service('GetGenreService', ['CountGenreService', '$http', function(CountGenr
         self.countGenres();
     })
     .catch(function(error){
-        console.log('No homes for you ', error)
+        console.log('Problem on GetGenreService GET ', error)
     })}; //end GET
 
     self.getAllGenres();

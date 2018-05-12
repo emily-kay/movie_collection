@@ -5,12 +5,12 @@ const pg = require('pg');
 const router = express.Router();
 const pool = require('../modules/database')
 
-//---------------GET and POST from Movie Controller----------------//
+//---------------GET from CountGenreService----------------//
 
 router.get('/', (req,res)=>{
     pool.query(`SELECT "genres"."name","movies"."genre_id", 
                 COUNT("genre_id") FROM "movies"
-                JOIN "genres" ON "genres"."id"="movies"."genre_id"
+                FULL OUTER JOIN "genres" ON "genres"."id"="movies"."genre_id"
                 GROUP BY "genres"."name", "movies"."genre_id";`)
         .then((results)=>{
             res.send(results.rows);

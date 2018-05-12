@@ -5,7 +5,7 @@ const pg = require('pg');
 const router = express.Router();
 const pool = require('../modules/database')
 
-//---------------GET and POST from Movie Controller----------------//
+//---------------GET from LastMovieService----------------//
 
 router.get('/', (req,res)=>{
     pool.query(`SELECT * FROM "movies"

@@ -1,3 +1,5 @@
+//---------------Gets all movies in DB----------------//
+
 app.service('GetMovieService', ['PosterService', '$http', function(PosterService, $http){
     console.log('GetMovieService works');
     var self = this;
@@ -16,7 +18,7 @@ app.service('GetMovieService', ['PosterService', '$http', function(PosterService
         self.getPoster();
     })
     .catch(function(error){
-        console.log('No homes for you ', error)
+        console.log('Problem on GetMovieService GET ', error)
     })}; //end GET
 
     self.getAllMovies();

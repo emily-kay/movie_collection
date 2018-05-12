@@ -1,3 +1,5 @@
+//---------------Adds a new genre to DB----------------//
+
 app.service('AddGenreService',  ['$http', 'GetGenreService', function($http, GetGenreService){
     console.log('AddGenreService works');
     var self = this;
@@ -15,7 +17,7 @@ app.service('AddGenreService',  ['$http', 'GetGenreService', function($http, Get
         self.getAllGenres();
     })
     .catch(function(error){
-        console.log('No movie for you ', error)
+        console.log('Problem on AddGenreService POST ', error)
     })}; //end POST
 
     self.getAllGenres();

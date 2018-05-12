@@ -1,3 +1,5 @@
+//---------------Displays most recent movie added----------------//
+
 app.service('LastMovieService', ['$http', function($http){
     console.log('LastMovieService works');
     var self = this;
@@ -14,7 +16,7 @@ app.service('LastMovieService', ['$http', function($http){
         self.lastMovies.details = response.data;
     })
     .catch(function(error){
-        console.log('No last movie for you ', error)
+        console.log('Problem on LastMovieService GET ', error)
     })}; //end GET
 
     self.getLastMovies();
