@@ -18,12 +18,8 @@ app.service('PosterService', ['AddMovieService', '$http', function(AddMovieServi
         }
     })
     .then(function(response){
-        console.log(response.data);
         self.poster = baseUrl + response.data.results[0].poster_path;
-        console.log(self.poster);
         newMovie.image_path = self.poster;
-        console.log(newMovie);
-        
         self.postMovie(newMovie);
     })
     .catch(function(error){

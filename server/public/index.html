@@ -42,18 +42,16 @@
 <!-- Angular APP -->
 
 <body ng-app="MovieApp">
+    <br>
     <h1 id="logo">Home Video</h1>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" href="#!/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#!/movies">Submit a New Movie</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#!/genre">Genres</a>
-        </li>
-    </ul>
+    <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" id="box">
+              <a class="p-2 text-muted" href="#!/">Home</a>
+              <a class="p-2 text-muted" href="#!/movies">Submit a New Movie</a>
+              <a class="p-2 text-muted" href="#!/genre">Genres</a>
+            </nav>
+    </div>
+    <br>
     <ng-view></ng-view>
 </body>
 
