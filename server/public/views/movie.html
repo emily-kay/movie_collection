@@ -15,9 +15,11 @@
             <input type="submit" value="Submit New Movie" />
         </form>
         <br>
-        <p>Latest Movie Added</p>
         <br>
-        <div class="card-deck">
+        <br>
+        <h3>Latest Movie Added</h3>
+        <br>
+        <div class="card-deck" id="box">
                 <div ng-repeat="details in vm.lastMovies.details">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" ng-src="{{details.image_path}}" alt="Card image cap">
@@ -28,6 +30,7 @@
                             <p class="card-text">Run time {{details.run_time}} min</p>
                     </div>
                 </div>
+                <br>
             </div>
         </div>    
 </div>
