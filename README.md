@@ -1,7 +1,6 @@
     PROJECT TO DO LIST 
         
         Base Mode  
-(Accomplish by end of Friday)
 
 DOM
 - [X] Create file system
@@ -11,10 +10,8 @@ DOM
 - [X] Client.js
 
 STYLING
-- [ ] Style.css
-- [ ] Angular Materials
-    - [ ] Sidebar submission form
-- [ ] Bootstrap
+- [X] Style.css
+- [X] Bootstrap
     - [X] Cards
    
 VIEWS 
@@ -34,7 +31,7 @@ SERVICES
 - [X] GET
     - [X] all movies
     - [X] all genres
-    - [X] api
+    - [X] Movie poster API
     - [X] last movie
     - [X] movie count
 - [X] POST 
@@ -66,13 +63,9 @@ DATABASE
 - [X] Add mock data
 
 
-    Personal Stretch goals 
-(Accomplish by end of Sunday)
-
-- [ ] Movie poster API
-- [ ] Give a visual rating
-
         Future Additions
-
+        
+- [ ] Angular Materials 
+- [ ] Give a visual rating
 - [ ] Clicking on a movie for more information
 - [ ] Search by name, rating, genre, director
